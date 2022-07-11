@@ -39,10 +39,12 @@ public class Assignment_1 {
 	//1.For RadioButton
 	public void radiobutton()
 	{
+		System.out.println("this is 1st comments adddd1111111");
 		 //Code to find Radio button with text Radio2 using XPath
         WebElement radio2=driver.findElement(By.xpath("//input[@value='radio2']"));
         radio2.click();
         Assert.assertEquals(true, radio2.isSelected()); 
+        
          System.out.println(" radio buttton is selected");
          }
 	
@@ -50,6 +52,7 @@ public class Assignment_1 {
 	//2.For Drop Down Handling
 	public void dropDown()
 	{
+		System.out.println("this is 2nd comments addd2222");
 		WebElement dropDown =driver.findElement(By.id("dropdown-class-example"));
 	Select option3 =new Select(dropDown);
 		option3.selectByValue("option3");
